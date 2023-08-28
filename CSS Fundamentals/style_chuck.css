@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  color: #444444;
+  line-height: 1.4;
+}
+
+.product {
+  border: 7px solid black;
+}
+
+.product-title {
+  text-transform: uppercase;
+  color: black;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* PRODUCT INFORMATION */
+.price {
+  font-weight: 800;
+  color: #000;
+}
+
+.shipping {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #777;
+}
+
+p,
+a,
+li {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* WE always need to specify all 4 states Link Visited Hover Active */
+.more-info:link,
+.more-info:visited {
+  color: #000;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+.details-title {
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.details-list {
+  list-style-type: square;
+}
+
+.add-cart {
+  text-transform: uppercase;
+  background-color: #000;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+}
+
+.add-cart:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}

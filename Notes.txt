@@ -1,0 +1,173 @@
+CSS
+- cascading style sheets
+- one of the core technologies
+- we use CSS to describe the visual style and presentation of the content written in HTML
+- consists of countless properties to format the content (fonts, spacing, text)
+
+SYNTAX
+
+h1 {
+	color: blue;
+	text-align: center;
+	font-size: 20px;
+}
+
+h1 = selector - we will style all h1 elements
+font-size = property
+20px = value
+property + value = DECLARATION / STYLE
+{inside curly braces} = declaration block
+SELECTOR + DECLARATION BLOCK = CSS RULE
+
+WHERE TO WRITE CSS
+
+Internal
+	- declare a style element in the head element
+	- then use the same syntax, SELECTOR + DECLARATION BLOCK
+	- not practical if we have lots of CSS code
+
+External
+	- we use a special CSS file
+	- use the same syntax SELECTOR + DECLARATION BLOCK
+	- add this line into the index.html, using the LINK element
+		-  <link href="style.css" rel="stylesheet" />
+
+Inline
+	- write the css code inside of the element
+	- declare a style attribute and write the css there
+	- SHOULD NEVER BE USED
+
+
+TEXT STYLING
+1. font-size
+	- size of the text
+	- default is 16 px
+2. font-family
+	- different fonts family
+	- we have to use fonts that are available online
+3. text-transform
+	- turn a text upper case
+4. font-style
+	- italic
+5. line-height
+	- spacing between the lines
+6. text-align
+	- align the text
+7. font-weight
+	- we can make text bold
+
+We can combine the selectors
+
+
+CLASSES and IDS
+
+- for multiple words ids and classes, we use - (element-author)
+- in the real word we usually use only CLASSES since we can use it multiple times
+- by using CLASSES, we are making our code ready for the future
+
+COLORS in CSS
+- there are many ways to represent colors in CSS
+	- RGB
+		- a value between 0 and 255 for each R G B 
+	- HEXadecimal
+		- from 0 to 255, using hexadecimal numbers, for each of R G B
+		- 0 to ff, 0 to ff, 0 to ff
+		- #00ffff = 0 255 255
+- in  REAL WORLD, we use HEX and in case we need transparecy, we use RBGA (alpha)
+
+1. background-color
+	- change the background of the element
+2. border
+	- 5px solid #fff
+	- it's called a shorthand property, since we can define 3 values into 1 property
+
+PSEUDO CLASSES
+- we can use the css selectors
+	- element :first-child
+	- nth-child(odd/ even/ 2/3/5)
+	- and so on
+
+- element p:first-child
+	- selects the p element only if it's the first child of the element
+
+CSS and HYPERLINKS
+- we should not use only the a element
+- we want to style different states of the a element
+	- a:link	- target all 'a' element that have a href attribute
+	- a:visited	- changes style if the link is clicked
+	- a:hover 	- change when the element is hovered
+	- a:active	- when we actually click on a link
+- get rid of the underline	
+	- text-decoration : none
+
+CSS THEORY 1 -  conflicting selectors - multiple CSS rules appling to a selector
+- all rules are appied to the element
+- HTML uses the Selectors priority 
+	- # - id selector - if there is an ID selector, that rule is going to be applied
+	- . - class selector or pseudo class
+	- p - element selector
+	- * - universal selector -  lowest priority
+- if there are multiple CSS rules with the same selector, the last one applies
+
+CSS THEORY 2 - Inheritance and Universal Selector
+- inheritance is the process that is an element is a child, it will inherit the properties from the parent element, if not specified other
+- inherited from 'element' - in dev tools
+- we can set some rules for 'body' and if there are not any other rules, everything in 'body' will have the same rules
+- USUALLY - ALL properties related to text are in the 'body' rule
+	- color
+	- font family
+- not all properties are inherited. MOSTLY related to TEXT will get inherited
+	- border is not inherited
+- '*' - universal selector
+	- we can add properties to all elements using the '*' 
+
+CSS THEORY 3 - The BOX MODEL
+- the box model defines how the elemens are arranged on a page
+- each and every element of a page can be seen as a rectangular box
+- each of these boxes and have 
+	- content
+	- outside spaces
+	- inside spaces
+	- borders
+
+Box Model components
+	- Content
+		- content of the element
+		- text
+		- video
+		- images
+		- using CSS properties we can specify the height and the width of the area
+	- Border
+		- a border around the element
+		- still inside the element
+	- Padding
+		- invisible white space created between the CONTENT and the BORDER
+		- just like the border, the Padding is still inside the element
+		- we can create empty spaces inside the elements
+	- Margin
+		- creates empty spaces around the element, outside of the BORDER
+		- we use MARGIN in order to create spaces between our elements on the page
+		- if we want spaces between 2 elements, we need to specify MARGIN on one of them 
+- all these are optional
+	- Fill Area
+		- area that gets filled with background color or background images
+		- includes the content, border and padding
+
+Box Model Calculations
+	- Final WIDTH = left border + left padding + width + right padding + right border
+	- Final Heigth = bottom border + bottom padding + height + top padding + top border
+
+PADDING
+- an element that has background color can always use some PADDING to create some space between the content and the border
+	- padding : 20 10 20 10 
+	- shorthand version
+
+MARGINS
+- useful in lists, to make some room between the entries
+- use MARGIN-BOTTOM to create space between elements
+- when there are 2 MARGINS in the same space, only 1 of them is visible
+
+GLOBAL RESET
+- we can RESET all the MARGINS AND PADDINGS and set them to 0
+- we use the UNIVERSAL ELEMENT and set the MARGIN and PADDING to 0
+- EXTREMELY COMMON - 1st thing to do on a new project
