@@ -8,6 +8,15 @@
 body {
   font-family: sans-serif;
   color: #444444;
+  position: relative;
+}
+
+.container {
+  width: 700px;
+  margin-left: auto;
+  /* margin-right: auto; */
+  /* shorthand */
+  margin: 0 auto;
 }
 
 .main-header {
@@ -17,6 +26,7 @@ body {
   padding-right: 40px;
   padding: 10px 30px 20px;
   margin-bottom: 60px;
+  /* height: 320px; */
 }
 
 h1 {
@@ -27,6 +37,20 @@ h1 {
   font-style: italic;
   padding: 20px;
   margin: 10px;
+  position: relative;
+}
+
+h1::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-family: sans-serif;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  margin: 0;
+  font-style: normal;
+  display: inline-block;
 }
 
 article {
@@ -62,20 +86,53 @@ p {
   margin-bottom: 15px;
 }
 
+p::first-letter {
+  color: #df214a;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+p::first-line {
+  color: #1612ee;
+}
+
 .list-1,
 .list-2 {
   margin-left: 50px;
   margin-bottom: 15px;
 }
 
+.list-1 li {
+  display: inline;
+}
+
 li {
   font-size: 18px;
   margin-bottom: 10px;
+
+  /* This changes the style to inline, so they will be one after another and will not occupy the whole space
+  display: inline; */
+}
+
+nav a:link {
+  background-color: orangered;
+  /* Margins will apply from left to right only since a is inline*/
+  margin: 20px;
+  padding: 20px;
+
+  /* CHange the elemens to block and they will be displayed one after another*/
+  display: block;
 }
 
 /* Remove the margins for the last element only */
 li:last-child {
   margin-bottom: 0;
+}
+
+/* will have the width of the entire page, the header */
+.code-image {
+  width: 100%;
+  height: auto;
 }
 
 /* footer p {
@@ -138,6 +195,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
+  width: 500px;
 }
 
 .related-list-element {
@@ -186,4 +244,19 @@ a:hover {
 
 a:active {
   font-size: 40px;
+}
+
+.like {
+  width: 120px;
+  height: 60px;
+  font-size: large;
+  cursor: pointer;
+  /* so far, the button is in Normal FLow */
+
+  /* Now we, will set it to absolute */
+  position: absolute;
+  /* top: 100px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
 }

@@ -171,3 +171,72 @@ GLOBAL RESET
 - we can RESET all the MARGINS AND PADDINGS and set them to 0
 - we use the UNIVERSAL ELEMENT and set the MARGIN and PADDING to 0
 - EXTREMELY COMMON - 1st thing to do on a new project
+
+DIMENSIONS
+- we can specify the width and height of every element
+- we don not specify the WIDTH and HEIGHT in the HTML, only in CSS
+
+WIDTH
+- we can use multiple measurements
+	- px
+	- percentages
+		- 100% 
+		- it's the percentage of the parent container
+
+CENTERING the PAGE
+- first, we need to put all our content into a container, that will be centered in the browser
+- we will use a <DIV> element, without any meaning or semantic meaning
+- the trick - we add MARGINS TO THE RIGHT AND TO THE LEFT
+- set both MARGINS to auto
+
+CSS THEORY 5 - Types of BOXES
+- there are different types of boxes in CSS
+	- inline boxes
+		- boxes that occupy only the space needed
+		- they don't create  line breaks
+		- heights and width do not apply
+		- margins and padding is applied only horizontally, not top and bottom
+		- img, strong, a, em, button
+		- CSS - display: inline
+	- block level boxes/ elements
+		- occupy all the space that they can
+		- creates line breaks after them
+		- cannot be side by side with one another
+		- they take up all the space they need horizontaly
+		- headings, p, lists, body, main, section, nav, aside, div, 
+		- CSS - display: block
+	- INLINE BLOCK boxes
+		- they look like inline from outside but behave like block on the inside
+		- they occupy the space needed for content only	
+		- the box model applyes and we can still set Heights and Widths, paddings and margins
+		
+
+CSS THEORY 6 - Absolute positioning
+- there are multiple positioning modes
+	- ABSOLUTE
+		- allows to absolutely position elements on the page
+		- "position: absolute"
+		-  we say that element is out of flow
+		- LOOSES ANY IMPACT on Surrounding elements
+		- it might even overlap
+		- we can use the "Top, Left, Bottom, Right" properties
+		- the element will be positioned against a relative container
+		- when we set an element to :absolute, the position will be relative to the VIEWPORT
+		- We need to set the element that we want the Absolute element to be set on to RELATIVE
+		- WE DON'T USE ABSOLUTE TO BUILD LAYOUTS, for every element
+	- NORMAL FLOW
+		- the default positioning of the elements on the page
+		- we can achieve this by setting "position: relative"
+		- we say that an element is in FLOW
+
+PSEUDO ELEMENTS
+- elements that don't exist in the HTML, but we can still style in CSS
+EX
+	- first letter of a paragraph
+	- first line of a paragraph
+		- we are using "::" - 2 x 2 puncte
+		- h1::first-letter
+		- h1::first-line
+		- h1::after - can be very useful without adding a new element to html
+			- it creates a new element from CSS
+		- h1::before

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
   color: #444444;
@@ -6,20 +11,25 @@ body {
 
 .product {
   border: 7px solid black;
+  width: 700px;
+  margin: 50px auto;
 }
 
 .product-title {
+  font-size: 22px;
+  text-align: center;
   text-transform: uppercase;
   color: black;
   background-color: #f1f1f1;
-  text-align: center;
-  font-size: 22px;
+  width: 100%;
+  padding: 10px 0;
 }
 
 /* PRODUCT INFORMATION */
 .price {
   font-weight: 800;
   color: #000;
+  margin-bottom: 5px;
 }
 
 .shipping {
@@ -27,6 +37,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   color: #777;
+  margin-bottom: 20px;
 }
 
 p,
@@ -35,17 +46,22 @@ li {
   font-size: 13px;
   font-weight: 600;
   color: #000;
+  margin-bottom: 10px;
 }
 
 /* WE always need to specify all 4 states Link Visited Hover Active */
 .more-info:link,
 .more-info:visited {
   color: #000;
+  /* THis will not work since we cannot add margins to small elements */
+  margin-bottom: 30px;
 }
 
 .more-info:hover,
 .more-info:active {
   text-decoration: none;
+  /* THis will not work since we cannot add margins to small elements */
+  margin-bottom: 30px;
 }
 
 /* PRODUCT DETAILS */
@@ -53,10 +69,13 @@ li {
   color: #000;
   font-size: 14px;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .details-list {
   list-style-type: square;
+  margin-left: 30px;
 }
 
 .add-cart {
@@ -66,10 +85,13 @@ li {
   color: #ffffff;
   font-size: 17px;
   text-align: center;
+  width: 100%;
+  padding: 15px 0;
 }
 
 .add-cart:hover {
   background-color: #fff;
   color: #000;
+  border-top: 7px solid black;
   cursor: pointer;
 }
