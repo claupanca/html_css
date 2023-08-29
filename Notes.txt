@@ -240,3 +240,7 @@ EX
 		- h1::after - can be very useful without adding a new element to html
 			- it creates a new element from CSS
 		- h1::before
+
+DEBUG
+- HTML validators
+- diffcheckers
