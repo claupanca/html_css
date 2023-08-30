@@ -65,3 +65,71 @@ VERTICAL CENTRING
 
 HORIZONTAL CENTERING
 	- justify-content: center / space-between
+
+FLEXBOX Overview
+- a set of realted CSS properties to build 1 dimensional layouts - on 1 row
+- the empty space is divided automatically between the FLEX ITEMS
+- makes easy to align FLEX ITEMS
+- perfect for replacing old school FLOATS - easier to maintain and fewer code
+
+FLEXBOX Terminology
+- FLEX CONTAINER
+	- display: flex
+- FLEX ITEMS
+	- childrens of the FLEX CONTAINER
+- MAIN AXIS
+	- the direction in which the FLEX ITEMS are layed out
+	- we can change the direction of the MAIN AXIS
+- CROSS AXIS
+	- the vertical axis
+	- we can also change the direction of this axis
+
+
+FLEXBOX CSS properties - https://flexbox.malven.co/
+- FLEX CONTAINER
+	- gap: 0 
+		- the space between FLEX ITEMS
+	- justify-content: flex-start / flex-end / center / space-between / space-around
+		- align items along the MAIN AXIS
+	- align-items: strech/ flex-start/ flex-end/ center/ baseline
+		- align FLEX ITEMS along CROSS AXIS
+	- flex-direction: row / row-reverse/ column/ column-reverse
+		- define which is the MAIN AXIS
+	- flex-wrap: nowrap / wrap / wrap-reverse
+		- wrap FLEX ITEMS into a new line if they are too large
+	- align-content: strech / flex-start/ flex-end
+		- only applies when there are multiple lines
+
+- FLEX ITEMS
+	- align-self: auto/ strech/ flex-start/ flex-end
+		- to overwrite align-items for individual flex 
+	- flex-grow: 0 / integer
+		- allows an element to grow , 0 = no, 1+ = yes
+	- flex-shrink: 0 / integer
+		- allows an element to shrink, 0=no, 1+=yes
+	- flex-basis: auto/ length
+		- to define an item's width, instead of the width property
+	- flex: 0 1 auto
+		- shorthand for flex-grow, -shrink, -basis
+	- order: 0 / integer	
+		- conrol the order of FLEX ITEMS in CSS withou changing the HTML
+		- by default, the order is 0 for all FLEX ELEMENTS
+
+
+FLEX propery
+- we can set these properties to all FLEX ITEMS or to single FLEX ITEMS
+	- flex-basis: auto - default	
+		- we can set the width of the FLEX ELEMENTS
+		- it's more of a reccomendation that we are making to the browser
+	- flex-shrink:1 - default
+		- allows for elements to shrink to fill the FLEX CONTAINER
+	- flex-grow: 0 - default
+		- allows the elements to fill the entire FLEX CONTAINER
+
+	- if all FLEX ELEMENTS have flex-grow:1 and a single FLEX ELEMENT has flex-grow:2, this element will have a double amount of growth than the rest, of course, of what is available from the extra space 
+
+- as BEST PRACTICE, we should only use FLEX, not -basis, -shrink, -grow
+- FLEX shorhand
+	- flex: 1 means that flex-grow: 1
+	- flex: 0 1 means that flex-grow:0 and flex-shrink:1
+	- flex: 0 0 300px mean that flex-grow:0, flex-shrink:0 and flex-basis=300px

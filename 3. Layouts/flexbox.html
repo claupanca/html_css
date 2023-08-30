@@ -45,7 +45,65 @@
         align-items: center;
         /* align-items: flex-end; */
         /* align-items: flex-start; */
-        justify-content: center;
+        /* justify-content: center; */
+        /* justify-content: baseline; */
+        justify-content: flex-start;
+
+        /* Add spaces between FLEX ITEMS */
+        /* gap: 10px; */
+      }
+
+      .el {
+        /* DEFAULTS 
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        */
+
+        /* SET THE WIDTH using FLEX BASIS */
+        /* flex-basis: 100px; */
+        /* flex-grow: 1; */
+        /* flex-shrink: 0;*/
+
+        /* All three in 1 */
+        flex: 1 0 100px;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+      }
+
+      .el--5 {
+        align-self: stretch;
+        /* flex-shrink: 1; */
+      }
+
+      .el--7 {
+        align-self: flex-end;
+        order: -2;
+        flex-grow: 1;
+
+        flex: 1 0 0;
+      }
+
+      .el--8 {
+        order: -1;
+      }
+
+      .back-link:link,
+      .back-link:visited {
+        font-family: sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .back-link:hover,
+      .back-link:active {
+        text-decoration: underline;
+        font-size: 40px;
+        color: #fff;
+        background-color: #000;
       }
     </style>
   </head>
@@ -54,11 +112,12 @@
       <div class="el el--1">HTML</div>
       <div class="el el--2">and</div>
       <div class="el el--3">CSS</div>
-      <div class="el el--4">are</div>
+      <!-- <div class="el el--4">are</div> -->
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!-- <div class="el el--6">languages</div> -->
       <div class="el el--7">to</div>
       <div class="el el--8">learn</div>
     </div>
+    <a href="index.html" class="back-link">Back To Blog Post Project</a>
   </body>
 </html>
