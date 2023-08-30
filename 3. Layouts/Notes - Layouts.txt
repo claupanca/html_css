@@ -1,0 +1,67 @@
+LAYOUTS
+- the wayt the text, images and all other content is placed on the page
+- the layout gives the page a VISUAL structure, into which we can place our content
+  
+PAGE LAYOUT
+	- laying the elements to form the big picture of the website
+
+COMPONENT LAYOUT
+	- these is the layout of each component which all together creates the PAGE LAYOUT
+
+
+BULDING LAYOUTS
+	- FLOAT layouts
+		- using the old property - FLOAT
+		- quickly replaced by newer technologies
+		- still used on older websites
+	- FLEXBOX		
+		- Perfect for 1 dimensional layouts -  a layout which is just a row
+		- might be perfect for simpler Component layouts
+	- CSS GRID
+		- build complete 2 dimensional Layouts - perfect for big page layouts
+		- perfect for more complex components
+
+FLOAT LAYOUT
+	- FLOAT property
+		- the element is taken out of the block structure and all the elements will FLOAT around it
+		- if we check the element with FLOAT, will see that the other elements are overlapping with it
+		- to fix this, we must use FLOAT on multiple elements
+		- we can comparte with ABSOLUTE however, FLOATED elements will affect the rest of the content, wrapping aroung, not la ABSOLUTE where the element it's on top
+		- the container will not adjust it;s height
+
+	- CLEAR FLOATS - repair
+		- the simplest way is to add another element to the COLLAPSED HEIGHT element, like a div (without meaning)
+		- select the clear element and use the CLEAR PROPERTY in CSS
+		- other technique - CLEAR FIX HACK
+		- on the element that has a collapsed height, we add the clearfix class, and in CSS we add a ::after pseuod element
+		- the ::after pseudo element needs CONTENT, CLEAR, it's inline, so we need to make it DISPLAY:BLOCK
+
+BUILDING A SIMPLE FLOAT LAYOUT
+	- we select again all elements, NOT NECESSARY
+	- we need to change the WIDTH of the elements we want SIDE BY SIDE
+	- add the FLOAT property
+	- for FOOTER, we clear the FLOAT since we don't want it to float around
+	- to make a GAP, we can decrease the WIDTH
+
+BOX-SIZING: BORDER-BOX
+	- to create a problem, we will remove the margin of the RELAED LIST and add PADDING to aside
+	- the element will dissapear from that place because it's too BIG
+	- issue that WIDTH + PADDING = more than the space we have available
+	- this issue is because that's how the BOX MODEL computes the height and width of the element (content+padding)
+	- BOX SIZING : BORDER BOX
+		- with this, we specify a width and a height and the element will auto adjust
+	- BOX -SIZING: BORDER - BOX goes into the UNIVERSAL SELECTOR at the top 
+
+
+FLEXBOX
+	- DISPLAY: FLEX
+	- element that has DISPLAY: FLEX = FLEX CONTAINER
+	- items inside a FLEX CONTAINER are FLEX ITEMS
+	- each of the FLEX ITEMS take exactly the space neede for CONTENT, on WIDTH
+	- for HEIGHT, by default, all FLEX ITEMS are as tall as the TALLEST element
+
+VERTICAL CENTRING
+	- align-items: center/ flex-start / flex-bottom
+
+HORIZONTAL CENTERING
+	- justify-content: center / space-between
