@@ -256,3 +256,18 @@ PLACE GRID ITEMS into GRID CELLS
 		- this happens becuase the columns and rows are also negative counted
 
 
+
+ALIGNING GRID ITEMS
+	- we can align the GRID TRACKS inside the GRID CONTAINER
+		- this is possible when the grid itself is smaller than the container
+		- justify-content
+		- align-content
+	
+	- we can align the GRID ITEMS inside the GRID TRACKS
+		- align-items
+		- justify-items
+
+
+BUILDING A SIMPLE CSSGRID LAYOUT
+- all spaces should be done in the GRID CONTAINER, no extra margins between elements
+- grid-template-rows is USUALLY OPTIONAL since the GRID manages the height based on the content

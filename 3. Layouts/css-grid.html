@@ -61,7 +61,31 @@
         grid-row: 5/6;
       }
 
+      /* CONTAINER 2 */
+      .el--2-1 {
+        background-color: blueviolet;
+      }
+
+      .el--2-3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--2-4 {
+        background-color: goldenrod;
+      }
+      .el--2-5 {
+        background-color: palevioletred;
+      }
+      .el--2-6 {
+        background-color: steelblue;
+      }
+      .el--2-7 {
+        background-color: yellow;
+      }
+
       .container--1 {
+        display: none;
+
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
@@ -69,7 +93,7 @@
         margin: 40px;
 
         /* CSS GRID */
-        display: grid;
+        /* display: grid; */
 
         /* grid-template-columns: 250px 250px 1fr 2fr; */
 
@@ -97,7 +121,7 @@
       }
 
       .container--2 {
-        display: none;
+        /* display: none; */
 
         /* STARTER */
         font-family: sans-serif;
@@ -105,10 +129,47 @@
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+
+        display: grid;
+
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 200px 300px;
+
+        gap: 20px;
+
+        /* Align tracks inside container */
+        /* distribute the empty space */
+        justify-content: center;
+        justify-content: end;
+        justify-content: space-between;
+
+        align-content: center;
+        align-content: end;
+        align-content: space-between;
+
+        /* Align GRID ITEMS inside GRID TRACKS */
+        /* align-items default : strech */
+        align-items: center;
+        align-items: start;
+
+        justify-items: end;
+        justify-items: start;
+        justify-items: center;
+      }
+
+      /*  Overwrite individually */
+      .el--2-1 {
+        justify-self: end;
+        align-self: center;
+      }
+
+      .el--2-7 {
+        justify-self: start;
+        align-self: end;
       }
     </style>
   </head>
@@ -127,12 +188,12 @@
     </div>
 
     <div class="container--2">
-      <div class="el el--1">(1)</div>
-      <div class="el el--3">(3)</div>
-      <div class="el el--4">(4)</div>
-      <div class="el el--5">(5)</div>
-      <div class="el el--6">(6)</div>
-      <div class="el el--7">(7)</div>
+      <div class="el el--2-1">(1)</div>
+      <div class="el el--2-3">(3)</div>
+      <div class="el el--2-4">(4)</div>
+      <div class="el el--2-5">(5)</div>
+      <div class="el el--2-6">(6)</div>
+      <div class="el el--2-7">(7)</div>
     </div>
   </body>
 </html>

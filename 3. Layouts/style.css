@@ -264,20 +264,53 @@ nav p {
   font-size: 18px;
 } */
 
-/* FLEXBOX */
+/* CSSGRID */
+/* WE wILL USE CSSGRID FOR THE whole container */
+.container {
+  display: grid;
 
+  grid-template-columns: 825px 1fr;
+  /* grid-template-rows: 80px 1fr; */
+
+  align-items: start;
+
+  column-gap: 75px;
+  row-gap: 75px;
+}
+
+.main-header {
+  grid-column: 1/-1;
+
+  /*  we want no margin=botoom */
+  margin-bottom: 0px;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1/-1;
+  background-color: #d8d8d8;
+}
+
+/* FLEXBOX */
+/* We are still using FLEXBOX for 1D elements */
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.post-content {
+/* THIS IS THE FLEXBOX LAYOUT */
+/* .post-content {
   display: flex;
   align-items: flex-start;
   gap: 75px;
   margin-bottom: 60px;
-}
+} */
 
 article {
   /* we can overcome the math */

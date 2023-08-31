@@ -215,3 +215,19 @@ li {
 .section-3 {
   flex: 1;
 }
+
+/* CSS GRID LAYOUT */
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+
+header {
+  grid-column: 1/-1;
+}
+
+.add-cart {
+  grid-column: 1/-1;
+}
