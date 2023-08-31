@@ -57,7 +57,7 @@ FLEXBOX
 	- DISPLAY: FLEX
 	- element that has DISPLAY: FLEX = FLEX CONTAINER
 	- items inside a FLEX CONTAINER are FLEX ITEMS
-	- each of the FLEX ITEMS take exactly the space neede for CONTENT, on WIDTH
+	- each of the FLEX ITEMS take exactly the space needed for CONTENT, on WIDTH
 	- for HEIGHT, by default, all FLEX ITEMS are as tall as the TALLEST element
 
 VERTICAL CENTRING
@@ -133,3 +133,126 @@ FLEX propery
 	- flex: 1 means that flex-grow: 1
 	- flex: 0 1 means that flex-grow:0 and flex-shrink:1
 	- flex: 0 0 300px mean that flex-grow:0, flex-shrink:0 and flex-basis=300px
+
+
+CSS GRID
+- just like FLEX BOX, we have GRID CONTAINERS and GRID ITEMS
+- similar logic
+	- grid-template-columns: 250px 250px 150px 100px;
+		- we manually as many columns as we want
+		- in the example we have 4 columns
+		-  the rows are created automatically, as many as needed
+
+- all elements will strech to the highest HEIGHT
+
+	- grid-template-rows: 100px 300px;
+		- we can specify the HEIGHT of each row, and if the elements don't have a defined Height, they will strech
+
+	- (grid-gap) or gap: 30px 
+		- define a gap between elements, on columns and rows
+	- column-gap: 30px
+		- define the gap between columns
+	- row-gap: 30px
+		- define the gap between rows
+
+CSS GRID Overview
+- CSS GRID is a set if CSS properties for 2D layouts
+- we can divide a container element into rows and columns and fill them with child elements
+- less-nested HTML and easier-to-read CSS
+- CSS is not MEANT TO REPLACE FLEXBOX
+	- 1D layout - FLEXBOX
+	- 2D layout - CSS GRID
+
+CSS GRID Terminology
+- GRID CONTAINER
+	- setting a container the display: grid
+- GRID ITEMS
+	- elements in a grid container
+- ROW AXIS
+	- from left to right
+- COLUMN AXIS
+	- from top to bottom
+- GRID LINES
+	- number of columns + 1
+		- 3 columns => 4 grid lines
+	- number of rows + 1	
+		- 2 rows => 3 grid lines
+- GRID CELL
+	- intersection of grid line
+	- we can fill them with GRID ITEMS, or not
+- GUTTERS(gaps)
+	- spaces between GRID ITEMS
+- GRID TRACK
+	- a row or a columns
+	- 2 rows and 3 columns => 2 row TRACKS and 3 column TRACKS
+
+
+CSS GRID properties
+- GRID CONTAINER
+	- grid-template-rows: number of rows
+	- grid-template-columns:  number of columns
+
+	- row-gap: 0	
+	- column-gap: 12px;		
+		- Create empty spaces between TRACKS, on ROW level or COLUMN level
+
+	- justify-items: strech / start / center / end
+	- align-items: strech / start / center / end
+		- align GRID ITEMS horizontally and vertically
+
+	- justify-content: start / center / end ...
+	- align-content: start /....
+		- these apply to the ENTIRE GRID CONTAINER
+		- Only applies if container is larger than GRID
+
+- GRID ITEMS
+	- grid-column: <start line> / <end line> | number
+	- grid-row: <start line> / <end line> | number
+		- place a GRID ITEM into a specific GRID CELL
+
+	- justify-self: strech / start / center / end
+	- align-self: strech / start / center / end
+		- align the GRID ITEM individually
+
+FR unit - fractional
+- instead of px
+- is adaptable, not rigid like px
+	- grid-template-columns: 200px 100px 1fr 100px;
+	- the 3 column has been expanded to fill the remaining space, and it's also SHRINKING
+
+	- grid-template-columns: 200px 100px 1fr 1fr;
+	- 3 and 4 columns will resize equally to fill the remaining space
+
+	- grid-template-columns: 200px 100px 1fr 2fr;
+	- 4 column will be double the size of 3 column
+
+	- grid-template-columns: 1fr 1fr 1fr auto;
+	- column 4 will take only the needed space
+
+	- grid-template-columns: repeat(4, 1fr);
+	- create 4 columns that will all be 1fr
+
+	- grid-template-rows: 1fr 1fr
+	- we NEED TO SPECIFY THE HEIGHT of the GRID CONTAINER to use FR on rows
+
+
+PLACE GRID ITEMS into GRID CELLS
+	- grid-column: 3 / 4
+	- grid-row:4 / 5
+		- will move the selected GRID ITEM to column 3 up to 4 row 4 up to 5
+
+	- grid-column: 3 / 5
+	- grid-row: 4 / 5
+		- will move the selected GRID ITEM from column 3 up to 5 (2 columns) and 1 row
+
+	- grid-column: 3/5;
+        - grid-row: 2/4;
+
+ 	- grid-column: 3 / span 2 === grid-column: 3 / 5
+	- grid-row : 1 / span 3 === grid-row: 1 / 4
+
+	- grid-column: 3 / -1 
+		- will span the element up to the last column
+		- this happens becuase the columns and rows are also negative counted
+
+
