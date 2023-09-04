@@ -193,4 +193,94 @@ DESIGN INGREDIENT #4: Icons
 
 ICONS Properties
 	- stroke: #aaa -  COLOR
-	- 
+	- width:24px;
+	- height: 24px
+
+DESIGN INGREDIENT #5: Shadows
+- shdows creates DEPTH, allow us to add a 3rd dimensions
+- Shadows are calculated based on distance from the screen of the element
+	- 2px away -  litte to no shadow
+	- 6px away - a bit of shadow
+	- 12px away - more shador
+	- 24px away - even bigger shadow
+- shadows can be used on boxes and text
+1. Don't use shadows if don't fit site personality
+	- Serious/ Elegant ==> no shadows to less shadows
+	- Playful/ Fun ==> more shadows
+2. Use shadows in small doses
+	- Don't add shadows to every element
+3. Go light on shadows
+	- don't make them too dark
+4. Small shadows for small elements
+	- for EMAIL Forms we can use shadows
+	- CTA's 
+5. Medium shadows
+	- used for entire sections to  float above the page
+	- used on cards to stand up
+6. Large Shadows
+	- Navigations and Popup windows -  really large shadows
+7. Experiment on different click interactions
+	- like hover and click
+8. Experment with glows
+	- colored shadows
+
+SHADOW CSS Property
+- box-shadow: 1 2 3 4 5
+	- 1 - offset horizontal length of the shadow : 20px
+	- 2 - offset vertical length of the shadow: 10px
+	- 3 - blur of the shadow: 20px
+	- 4 - optional - scale the shadow up: 10px
+	- 5 - color of the shadow - #000
+
+- COLOR OF THE SHADOW
+	- we format the color to rbgA(255,255,255,a)
+	- we use 0.1 MAX
+
+- we want the light source to come from the TOP
+	- we set 1 (horizontal offset) - to 0
+
+- If we set the blur to 0, the shadow will be a BOX
+- 4 is ussually set to 0
+
+
+DESIGN INGREDIENT #6: Border-radius 
+- Serius/ Elegant ===> Less border-radius
+- Playful/ Fun ===> More border-radius
+1. Match the typeface roundness
+2. Where top use border radius
+	- buttons
+	- images
+	- around icons
+	- standout sections
+
+
+DESIGN INGREDIENT #7: Whitespace
+- whitespace is space between elements
+- Whitespaces communicates  how content is related to one another
+- it creates invisible relationships between the elements of the layout
+
+1. Use a TON of whitespace between SECTIONS
+	- 192px for example
+	- 140px
+	- 160px
+
+2. Between groups of elements in the SAME SECTION
+	- 96px
+	- 150px
+
+3. Between smaller elements
+
+4. Inside of groups of elements, use WHITESPACE instead of lines
+
+5. Elements that belong together, should be closer
+	- LAW of PROXIMITY
+
+6. as a beginner - START WITH TOO MUCH WHITESPACE, and then remove it
+	- START WITH WAY TO MUCH SPACE  
+	
+7. Match other design choices 
+	-  BIG TEXT + BIG IMAGES = MORE WHITESPACE
+	- small text + small images = less whitespace
+
+8. USE A SYSTEM 	
+	- 2px, 4px, 8px, 12px, 16px, 24px, 32px, 48px .....
