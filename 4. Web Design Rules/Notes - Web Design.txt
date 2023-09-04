@@ -1,0 +1,196 @@
+OVERVIEW of WEB DESIGN RULES AND FRAMEWORK
+
+- Web Designers are who create the look and feel of a website
+- Web Developers implement the design using HTML, CSS and JS code
+
+
+EVERYONE CAN LEARN GOOD WEB DESIGN by FOLLOWING A FRAMEWORK/SYSTEM
+
+WEBSITES Personalities
+1. Serious / Elegant personality
+	- for luxury and elegance
+	- based on thin serif typefaces
+	- golden or pastel colors
+	- big high-quality images
+
+2. Minimalist / Simple
+	- focused on the important text content
+	- small or medium sized black text
+	- some lines
+	- very few images and small icons
+
+3. Plain / Neutral
+	- used in well established and big corportations (Microsoft)
+	- neutral and small typefaces
+	- very structured layout
+
+4. Bold / COnfidennt
+	- big and bold typography
+	- bright and big color blocks
+	
+5. Calm / Peaceful
+	- used for products and services that try to convey the idea that they care about the consumer
+	- calming pastel colors
+	- soft serif headings
+
+6. Startup / Upbeat
+	- used a lot in startup companies
+	- modern looking sens serif typefaces
+	- light-grey text and background 
+	- rounded elements
+
+7. Playful / Fun	
+	- playful and colorful design
+	- hand-drawn icons and illustrations
+	- animations
+	- fun language
+
+
+DESING INGREDIENT #1 - Typography
+- Serif vs Sans-Serif typefaces
+	- Serif 	
+		- small details at the end of the characters
+		- traditional, clasic, good for long text
+	- Sans-Serif
+		- without the small lines
+		- clean and simple
+		- modern look and feel
+	 	- easier to choose for beginners
+- Design Toolbox
+	- Google Fonts
+	- Font Squirrel
+
+1. Use good and popular typefaces
+	- play it safe, don't use any crazy and weird typefaces
+	- Sans-serif: Inter, Open Sans, Roboto, Montserrat, Work Sans, Lato
+	- Serif: Merriwether, Aleo, Playfair Display, Cormorant, Cardo, Lora
+	- USE ONLY 1 TYPEFACE for the page
+2. Choose the right typeface for the website personality
+	- decide between serif and sans-serif typeface
+	- experiment with the typefaces
+	- apply the typeface to the whole page and see the differences
+3. Font Size
+	- use a TYPE SCALE tool
+	- NORMAL TEXT
+		- between 16px and 32px
+	- LONG TEXT (blog post)
+		- 20px or even bigger
+	- BIG HEADLINES
+		- 50px+
+		- BOLD = 600+ weight
+	- Font Weight
+		- don't use any font weight under 400(regular)
+4. Reading Experience
+	- Use less than 75 characters / line
+	- Line Height 
+		- normal text: between 1.5 and 2
+		- big text: below 1.5
+		- the smaller or longer the text, the LARGER the line height needs to be
+	- Decrease the letter spacing
+	- Use ALL CAPS for SHORT TITLE, make it SMALL, BOLD, Increase letter-spacing
+	- DON'T JUSTIFY TEXT
+	- DON'T CENTER LONG TEXTS
+
+
+DESIGN INGREDIENT #2 - Colors
+1. Make sure the colors match the website personality
+	- Colors convey meaning
+	- COLORS EXPLAINED IN THE LESSIONS PDF
+2. Good COLOR TONE
+	- TOOL BOX
+		- OC- Open color
+		- tailwind CSS
+		- FLAT UI COLORS 2
+3. Color System
+	- In any design we need at least 2 tyoew of colors 
+		- MAIN color
+			- the main color
+		- GRAY color
+			- a darker version of the main color
+		- ACCENT color - after experience -  TOOLBOX - palleton.com / coolors
+			- secondary color
+			- use the TOOLBOX
+4. We need lighter and darker versions of each of these colors
+	- TINTS
+		- lighter versions
+	- SHADES
+		- darker versions
+	- Toolbox - Tint & Shade Generator
+5. MAIN COLOR
+	- used to draw attention to the main ELEMENT of the page
+		- CTA, logo, buttons
+6. Use colors in images and illustrations
+7. COLORS AND TYPOGRAPHY
+	- on DARK COLOR background, we can use a TINT (lighter version) of the background
+	- text should no be completely black
+	- Don't make text too light 
+		- use a tool to check the contrast between text and background colors
+		- 4.5:1 for normal text
+		- 3:1 for larger text
+
+DESIGN INGREDIENT #3 - Images
+1. Different types of images
+	- PRODUCT PHOTOS
+		- illustrate the producte we want to sell
+	- STORYTELLING photos
+		- convey the message of the website
+		- related to the product
+	- ILLUSTRATIONS
+		- more abstract way of storytelling
+	- PATTERNS
+		- might appear as backgrounds
+2. Use the images to support the message and the story
+	- use images that really make a connection with your content	
+3. Use original images
+	- good looking stock images
+	- high quality images
+	- don't use fake images
+	- TOOLBOX	
+		- Unsplash
+		- Pexels
+		- DrawKit
+		- unDraw
+4. Show REAL PEOPLE IN THE IMAGES
+5. CROP IMAGES to fit our message
+6. Combine photos, illustrations and patterns
+7. TEXT ON IMAGES
+	- darken or brighten the image where the TEXT is
+	- use gradients
+	- position the image in a neutral area
+	- Put a text in a box and add opacity to the box
+8. Account for HIG RES screens
+	- size the images  as the actual dimension is DOUBLE 
+	- if we want the displayed image to be 300 x 300, we need the original image to be 600 x 600
+9. Compress images
+	- TOOLBOX
+		- Squoosh
+	- compress all images 
+10. When using multiple images side by side, use the same dimensions
+
+
+DESIGN INGREDIENT #4: Icons
+- can add a lot of detail
+- can change the look and feel of the entire page
+1. GOOD ICON PACk
+	- TOOLBOX
+		- Phosphor icons
+		- ionicons
+		- icons8
+2. NEVER MIX ICONS PACKS
+3. Use SVG format of ICON FONTS, NOT png or jpg
+4. Adjust to Web personality
+	- use an icon pack that has a similar roundnedd and weight as the TYPOGRAPHY
+5. When to use icons
+	- use icons to provide assitance to text
+	- build feature blocks (icon on top, heading, description)
+	- connect them with BUTTONS
+	- as bullet points
+6. How to use Icons well
+	- for low attention - set  the same color as text
+	- for high attention - use different colors
+	- icons need to make sense and FIT to the TEXT
+	- not make icons LARGER than designed
+
+ICONS Properties
+	- stroke: #aaa -  COLOR
+	- 
