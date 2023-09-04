@@ -284,3 +284,121 @@ DESIGN INGREDIENT #7: Whitespace
 
 8. USE A SYSTEM 	
 	- 2px, 4px, 8px, 12px, 16px, 24px, 32px, 48px .....
+
+DESIGN INGREDIENT #8: Visual Hierarchy
+- all about establishing which elements of a desing are the most important ones
+- is about drawing attention to the most imporatnt elements
+- define a path for users, to guide them through the page
+- a culmination of all the INGREDIENTS
+
+1. Position imporatant elements closer to the top of the page
+	- that's where they get the most attentions
+	- attention flows from top to bottom
+
+2. Images draw a lot of attention
+	- use the mindfully
+
+3. Use Whitespace strategically
+	- extremely imporatnt to create visual hierarchy
+
+VISUAL HIERARCHY of for TEXT ELEMENTS
+4. Use a combination of font size, weight, color and whitespace
+	- font color
+	- backgrond color
+	- font weight
+
+5. We should emphasize 
+	- titles
+	- sub-titles
+	- links
+	- buttons
+	- data points
+	- icons
+
+6. We should De-Emphasize
+	- less important text
+	- labels
+	- secondary/ additional info
+
+VISUAL HIERARCHY BETWEEN COMPONENTS
+7. We acomplish it through a combination of
+	- background colors
+	- shadow
+	- border
+
+8. De-Emphasizing component B
+
+9.Element to EMPHASIZE
+	- testimonials
+	- call to action sections
+	- highlight sections
+	- preview cards
+	- forms
+	- pricing tables
+	- important rows/columns in tables
+
+
+DESIGN INGREDIET #9: User Experience (UX)
+- huge field
+
+What is UI (user interface)?	
+	- what it looks and feels like
+What is UX (user experience)?
+	- how it works
+
+UX Design - IT"S ALL ABOUT GOALS
+	- a website or application EXISTS FOR A REASON	
+	- a user has a GOAL of visiting the PAGE
+	- a business has a GOAL of creating the PAGE
+	- the main GOAL IS A CORRELATION BETWEEN THESE 2
+
+PRACTICAL UX guidelines
+1. Don't reinvent the wheel. Use patterns that users know
+-	- there is nothing wrong with the sites that look the same
+	- that's a good thing, the users get to know the site
+	
+2. Make the CTA the most proemintent element, and make the text descriptive
+	- make the CTA a standout
+
+3. Use BLUETEXT and UNDERLINE ONLY ON LINKS
+	- users are really used to BLUE and UNDERLINE as LINKS, so don't use it on anything else
+
+4. Animation should have a PURPOSE and be FAST -  between 200ms and 500ms
+
+5. Align labels and FIELDS in 1 vertical line for FORMS
+
+6. Offer good feedback for all FORM ACTIONS
+
+7. LAW OF LOCALITY
+	- a button that will do something NEEDS TO BE PLACED WHERE IT HAS AN EFFECT	
+	- 
+
+UX RULES for CONTENT
+1. Write a descriptive headline on the main page
+	- use a descriptive
+	- keyword-focused headline about the business
+
+2. Only include relevant information
+	- cut out all the fluff
+	- make content 100% clear
+
+3. Use SIMPLE WORDS
+	- avoid technical jargon
+	- avoid smart-sounding words
+
+4. Break a LONG TEXT using
+	- sub-headings
+	- images
+	- block quoutes
+	- bullet points
+
+
+STEAL LIKE AN ARTIST
+- NOT COPY entire desing.
+	- TAKE GOOD PARTS AND adapt them to our needs
+	
+TOOLBOX
+	- Landbook.com
+	- Onepagelove
+	- awwwards.com
+	- screenlane.com
