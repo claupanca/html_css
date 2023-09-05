@@ -49,14 +49,18 @@
       .carousel {
         width: 800px;
         margin: 100px auto;
+
+        display: flex;
       }
 
       .item {
         background-color: #087f5b;
         border-radius: 12px;
         color: #fff;
-        padding: 32px;
-        padding-left: 80px;
+        /* padding: 32px;
+        padding-left: 80px; */
+        /* TOP / RIGHT / BOTTOM / LEFT */
+        padding: 32px 48px 32px 80px;
 
         display: flex;
         align-items: center;
@@ -65,14 +69,14 @@
         position: relative;
       }
 
-      .testimonial-box {
+      .testimonial--box {
         /* display: flex; */
         /* flex-direction: column; */
 
         /* gap: 32px; */
       }
 
-      .testimonial-text {
+      .testimonial--text {
         /* / 16 / 18 / 20 / 24 / 30  */
         font-size: 18px;
         font-weight: 500;
@@ -81,40 +85,84 @@
         margin-bottom: 32px;
       }
 
-      .testimonial-author {
+      .testimonial--author {
         font-size: 14px;
         color: #c3fae8;
 
         margin-bottom: 4px;
       }
 
-      .testimonial-role {
+      .testimonial--role {
         font-size: 12px;
         color: #c3fae8;
       }
 
-      .left,
-      .right {
-        width: 30px;
-        height: 30px;
+      .btn {
+        width: 40px;
+        height: 40px;
 
         border-radius: 30px;
         background-color: #fff;
         border: none;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
         cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      .left {
+      .btn--left {
         position: absolute;
-        top: 115px;
-        left: -15px;
+        /* top: 115px;
+        left: -24px; */
+        /* IN RELATION TO PARENT ELEMENT */
+        top: 50%;
+        left: 0;
+
+        /* IN RELATION WITH THE ELEMENT ITSELF */
+        transform: translate(-50%, -50%);
       }
 
-      .right {
+      .btn--right {
         position: absolute;
-        top: 115px;
-        right: -15px;
+        /* top: 115px;
+        right: -24px; */
+        /* IN RELATION TO PARENT ELEMENT */
+        top: 50%;
+        right: 0;
+
+        /* IN RELATION WITH THE ELEMENT ITSELF */
+        transform: translate(50%, -50%);
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      .nav--buttons {
+        display: flex;
+        gap: 12px;
+
+        position: absolute;
+        /* top: 105%; */
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 30px);
+      }
+
+      .nav--dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 12px;
+        background-color: #fff;
+        border: 2px solid #087f5b;
+        cursor: pointer;
+      }
+
+      .dot--active {
+        background-color: #087f5b;
       }
     </style>
   </head>
@@ -122,26 +170,26 @@
     <div class="carousel">
       <div class="item">
         <img src="starter/maria.jpg" alt="Maria de ALmeida" />
-        <blockquote class="testimonial-box">
-          <p class="testimonial-text">
+        <blockquote class="testimonial--box">
+          <p class="testimonial--text">
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
             perferendis in reprehenderit maiores, repudiandae magnam! Excepturi
             modi amet."
           </p>
 
-          <p class="testimonial-author">Maria de Almeida</p>
-          <p class="testimonial-role">
+          <p class="testimonial--author">Maria de Almeida</p>
+          <p class="testimonial--role">
             Senior Product Manager at EDP Comercial
           </p>
         </blockquote>
-        <button class="left">
+        <button class="btn btn--left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="button-left"
+            class="icon left"
           >
             <path
               stroke-linecap="round"
@@ -150,14 +198,14 @@
             />
           </svg>
         </button>
-        <button class="right">
+        <button class="btn btn--right">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="button-right"
+            class="icon right"
           >
             <path
               stroke-linecap="round"
@@ -166,6 +214,12 @@
             />
           </svg>
         </button>
+        <section class="nav--buttons">
+          <button class="nav--dot dot--active">&nbsp;</button>
+          <button class="nav--dot">&nbsp;</button>
+          <button class="nav--dot">&nbsp;</button>
+          <button class="nav--dot">&nbsp;</button>
+        </section>
       </div>
     </div>
   </body>
