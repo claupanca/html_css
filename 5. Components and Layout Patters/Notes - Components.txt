@@ -1,0 +1,59 @@
+FROM ELEMENTS TO WEBPAGE
+- we build websites always in the same way 
+	- Elements
+		- paragraphs
+		- images
+		- buttons
+	- Components
+		- row
+		- grid
+	- Layout
+		- Organize the components
+	- Webpage
+		- Assemble all laytouts together
+
+
+1. Use common elements and components to convey information on the website
+2. Combine components into common layouts
+3. Assemble the layouts and components into the webpage
+
+COMMON THINGS in Web Design
+
+ELEMENTS
+	- text
+	- buttons
+	- images
+	- input elements
+	- tags
+
+COMPONENTS
+	- breadcrumbs
+	- pagination
+	- alert and status bars
+	- gallery
+	- accordion
+	- tabs
+	- carousel
+	- steps
+	- forms
+	- etc
+
+SECTION COMPONENTS
+	- Navigation
+	- Hero Section
+	- footer
+	- Call-to-action section
+	- Feature row
+
+LAYOUT PATTERNS
+	- row of boxes or cards
+	- grid of boxes or cards
+	- Z-pattern
+	- F-pattern
+	- Single-column
+	- Sidebar
+	- Multi-columns / magazine
+	- Asymmetry / Experimental
+
+BUILDING AN ACCORDION
+
