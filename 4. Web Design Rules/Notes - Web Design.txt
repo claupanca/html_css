@@ -70,7 +70,7 @@ DESING INGREDIENT #1 - Typography
 	- experiment with the typefaces
 	- apply the typeface to the whole page and see the differences
 3. Font Size
-	- use a TYPE SCALE tool
+	- use a TOOLBOX - TYPE SCALE tool
 	- NORMAL TEXT
 		- between 16px and 32px
 	- LONG TEXT (blog post)
