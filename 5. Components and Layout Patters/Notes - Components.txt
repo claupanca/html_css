@@ -55,5 +55,5 @@ LAYOUT PATTERNS
 	- Multi-columns / magazine
 	- Asymmetry / Experimental
 
-BUILDING AN ACCORDION
 
+SEE THE pdf. FOR EXAMPLES ON EACH OF THESE ITEMS
