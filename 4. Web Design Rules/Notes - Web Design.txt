@@ -102,7 +102,7 @@ DESIGN INGREDIENT #2 - Colors
 		- tailwind CSS
 		- FLAT UI COLORS 2
 3. Color System
-	- In any design we need at least 2 tyoew of colors 
+	- In any design we need at least 2 types of colors 
 		- MAIN color
 			- the main color
 		- GRAY color
