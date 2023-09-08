@@ -79,15 +79,15 @@ body {
   color: #555;
 }
 
-.test {
+/* .test {
   background-color: red;
 
   /* width: 1000px; */
-  max-width: 1000px;
+/* max-width: 1000px; */
 
-  /*  2 * 16 (default) or 4 * 10 (custom)*/
-  font-size: 2rem;
+/*  2 * 16 (default) or 4 * 10 (custom)*/
+/* font-size: 2rem; */
 
-  /*  4 * 16 (default)  or  4 * 10 (custom)*/
-  padding: 4rem;
-}
+/*  4 * 16 (default)  or  4 * 10 (custom)*/
+/* padding: 4rem; 
+}*/
