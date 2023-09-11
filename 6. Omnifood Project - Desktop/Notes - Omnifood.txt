@@ -1,6 +1,0 @@
-OMNIFOOD
-
-- Food Startup
-- Use AI to create and deliver custom healty meal plans
-- they need a new, clean and professional website
-- we are provided with all the content (content.md)

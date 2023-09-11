@@ -126,3 +126,17 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+###########
+
+## SECTIONS
+
+- Navigation (some links at the top to direct users to the sections)
+- Hero section
+- Featured in section (big logos from other companies)
+- How it works
+- Diets + Sample meals
+- Photo Galery + Testimonials
+- Pricing cards + Features
+- CTA - Action section (simple form for FREE MEAL)
+- Footer
