@@ -208,6 +208,81 @@
   width: 35%;
 }
 
+/* *********************************** */
+/* FEATURED IN SECTION */
+/* *********************************** */
+
+.featured-section {
+  padding: 9.6rem 0;
+
+  background-color: #fdf2e9;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.featured-logo {
+  width: 15%;
+  /* height: 15%; */
+}
+
+/* *********************************** */
+/* MEALS SECTION */
+/* *********************************** */
+
+.meals-section {
+  padding: 9.6rem 0;
+  background-color: #fff;
+}
+
+.cards {
+  display: flex;
+  gap: 6.4rem;
+}
+
+.card {
+  box-shadow: 0 0 1rem 1rem rgba(51, 51, 51, 0.101);
+  /* border: 0.2rem solid #333; */
+}
+
+.meal-img-box {
+  margin-bottom: 3.2rem;
+}
+
+.meal-img-box img {
+  width: 100%;
+}
+
+.meal-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.meal-property {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1.2rem;
+
+  padding: 0 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.meal-property svg {
+  max-width: 24px;
+}
+
+.meal-property p {
+  font-size: 1.4rem;
+}
+
 /* EXAMPLE */
 
 /* .section-how div {
