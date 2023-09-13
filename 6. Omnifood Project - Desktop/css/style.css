@@ -238,14 +238,10 @@
   background-color: #fff;
 }
 
-.cards {
-  display: flex;
-  gap: 6.4rem;
-}
-
 .card {
   box-shadow: 0 0 1rem 1rem rgba(51, 51, 51, 0.101);
   /* border: 0.2rem solid #333; */
+  /* align-self: stretch; */
 }
 
 .meal-img-box {
@@ -256,11 +252,11 @@
   width: 100%;
 }
 
-.meal-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.meal-text-box {
+  padding: 0 2.4rem;
+}
 
+.meal-title {
   font-size: 2.4rem;
   margin-bottom: 3.2rem;
 }
@@ -271,7 +267,6 @@
   /* justify-content: center; */
   gap: 1.2rem;
 
-  padding: 0 1.6rem;
   margin-bottom: 1.2rem;
 }
 
@@ -281,6 +276,16 @@
 
 .meal-property p {
   font-size: 1.4rem;
+}
+
+.diet-list {
+  padding: 0 4.8rem;
+  line-height: 2;
+}
+
+.diet {
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 
 /* EXAMPLE */
