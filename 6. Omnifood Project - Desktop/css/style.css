@@ -213,9 +213,18 @@
 /* *********************************** */
 
 .featured-section {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0;
 
   background-color: #fdf2e9;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
 }
 
 .logos {
@@ -227,6 +236,11 @@
 .featured-logo {
   width: 15%;
   /* height: 15%; */
+
+  /* Trick to make images grey */
+  /* filter: grayscale(100); */
+  filter: brightness(0);
+  opacity: 50%;
 }
 
 /* *********************************** */
@@ -242,6 +256,13 @@
   box-shadow: 0 0 1rem 1rem rgba(51, 51, 51, 0.101);
   /* border: 0.2rem solid #333; */
   /* align-self: stretch; */
+
+  transition: all 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0 0 1rem 1.2rem rgba(51, 51, 51, 0.201);
 }
 
 .meal-img-box {
@@ -253,12 +274,18 @@
 }
 
 .meal-text-box {
-  padding: 0 2.4rem;
+  padding: 0 2.4rem 2.4rem 2.4rem;
 }
 
 .meal-title {
   font-size: 2.4rem;
   margin-bottom: 3.2rem;
+}
+
+.meal-properties {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .meal-property {
@@ -267,11 +294,12 @@
   /* justify-content: center; */
   gap: 1.2rem;
 
-  margin-bottom: 1.2rem;
+  /* margin-bottom: 1.2rem; */
 }
 
 .meal-property svg {
-  max-width: 24px;
+  max-width: 2.4rem;
+  stroke: #eea564;
 }
 
 .meal-property p {
@@ -279,13 +307,32 @@
 }
 
 .diet-list {
-  padding: 0 4.8rem;
-  line-height: 2;
+  /* padding: 0 2.4rem; */
+  /* line-height: 2; */
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .diet {
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.diet svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 /* EXAMPLE */
