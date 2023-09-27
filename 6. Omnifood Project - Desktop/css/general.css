@@ -121,6 +121,19 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 4.8rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child { */
+/* we are using this trick to remove the margin bottom if the GRID IS the last child */
+/* margin-bottom: 0; */
+/* } */
+
+/* We can use the above comments, but we can use this trick */
+/* IT WILL ADD THE BOTTOM MARGIN ONYL IF THE GRID IS NOT THE LAST CHILD */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-cols {
@@ -129,6 +142,10 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--center-v {

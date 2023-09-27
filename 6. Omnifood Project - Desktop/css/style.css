@@ -393,6 +393,141 @@
   transform: scale(1.3);
 }
 
+/* *********************************** */
+/* PRICING SECTION */
+/* *********************************** */
+
+.pricing-section {
+  padding: 9.6rem 0;
+  background-color: #fff;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 4.8rem;
+
+  max-width: 90rem;
+
+  margin: 0 auto;
+
+  margin-bottom: 9.6rem;
+}
+
+.pricing-card {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: #fdf2e9; */
+
+  border: 0.2rem solid #fdf2e9;
+
+  border-radius: 30px 0px 30px;
+
+  padding: 3.2rem;
+}
+
+.pricing-card--complete {
+  background-color: #fdf2e9;
+  position: relative;
+
+  /* TO CUT THE EXTERIOR OVERFLOW from the ribbon */
+  overflow: hidden;
+}
+
+.pricing-card--complete:before {
+  content: "BEST VALUE";
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.8rem 3.2rem;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 5.2%;
+  right: -9%;
+
+  transform: rotate(45deg);
+}
+
+.pricing-tier {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.75px;
+  color: #b8651b;
+}
+
+.price {
+  font-size: 2.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.price span {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.pricing-items {
+  list-style-type: none;
+
+  margin-bottom: 4.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  align-self: flex-start;
+}
+
+.pricing-items li {
+  display: flex;
+  align-items: center;
+
+  gap: 1.2rem;
+}
+
+.pricing-items li p {
+  font-size: 1.6rem;
+}
+
+.pricing-items svg {
+  max-width: 2.4rem;
+}
+
+.feature {
+}
+
+.feature svg {
+  width: 4.8rem;
+  display: block;
+  stroke: #e67e22;
+  background-color: #fae5d3;
+  padding: 1.2rem;
+
+  border-radius: 50px;
+
+  margin-bottom: 2.4rem;
+}
+
+.feature-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.8rem;
+}
+
+.feature-info {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
 /* EXAMPLE */
 
 /* .section-how div {
