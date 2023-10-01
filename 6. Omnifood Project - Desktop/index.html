@@ -17,17 +17,19 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="logo"
-        src="starter/content/img/omnifood-logo.png"
-        alt="omnifood logo"
-      />
+      <a href="#">
+        <img
+          class="logo"
+          src="starter/content/img/omnifood-logo.png"
+          alt="omnifood logo"
+        />
+      </a>
       <nav class="main-nav">
         <ul class="nav-list">
-          <li><a class="main-nav-link" href="#">Button 1</a></li>
-          <li><a class="main-nav-link" href="#">Button 2</a></li>
-          <li><a class="main-nav-link" href="#">Button 3</a></li>
-          <li><a class="main-nav-link" href="#">Button 4</a></li>
+          <li><a class="main-nav-link" href="#">How It Works</a></li>
+          <li><a class="main-nav-link" href="#">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link" href="#">Meals</a></li>
           <li>
             <a class="main-nav-link nav-cta" href="#">Start eating well</a>
           </li>
@@ -1019,6 +1021,69 @@
         </div>
       </section>
 
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <!-- <p class="subheading">Sign Up</p> -->
+              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+              <form class="sign-up-form" action="#">
+                <div class="form-feature sign-up-name">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    class="name-input"
+                    type="text"
+                    name="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="form-feature sign-up-email">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    class="email-input"
+                    type="email"
+                    name="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-feature sign-up-how">
+                  <label for="how">Where did you hear from us?</label>
+                  <select id="how" required>
+                    <option value="">Please choose an option:</option>
+                    <option value="friends">Friends and Family</option>
+                    <option value="web">Web</option>
+                    <option value="social media">Social Media</option>
+                  </select>
+                  <!-- <input
+                    id="how"
+                    class="how-input"
+                    type="text"
+                    name="how"
+                    placeholder="me@example.com"
+                  /> -->
+                </div>
+
+                <button class="btn btn--form">Sign Up Now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img"
+              role="img"
+              aria-label="woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+
       <!-- REUSABLE GRID EXAMPLE -->
       <!-- <section class="section--how >
         <div class="container grid grid--2-cols">
@@ -1040,5 +1105,186 @@
         <div>Test 6</div>
       </section> -->
     </main>
+
+    <footer>
+      <section class="footer-section">
+        <div class="container">
+          <div class="grid grid--6-cols">
+            <div class="footer-item">
+              <a href="#">
+                <img
+                  class="logo"
+                  src="starter/content/img/omnifood-logo.png"
+                  alt="omnifood logo"
+                />
+              </a>
+              <div class="social-links">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,112c0,22.57-7.9,43.2-22.23,58.11C180.39,184,162.25,192,144,192c-17.88,0-29.82-5.86-37.43-12L95.79,225.83A8,8,0,0,1,88,232a8.24,8.24,0,0,1-1.84-.21,8,8,0,0,1-6-9.62l32-136a8,8,0,0,1,15.58,3.66l-16.9,71.8C114,166,123.3,176,144,176c27.53,0,56-23.94,56-64A72,72,0,1,0,65.63,148a8,8,0,0,1-13.85,8A88,88,0,1,1,216,112Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer-item">
+              <p class="footer-item--title">Contact</p>
+              <address>
+                <svg
+                  class="footer-contact--primary"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+                  />
+                </svg>
+
+                <p class="footer-contact--secondary">
+                  623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                </p>
+
+                <svg
+                  class="footer-contact--primary"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
+                </svg>
+
+                <a href="tel:415-201-6370" class="footer-contact--secondary"
+                  >415-201-6370
+                </a>
+
+                <svg
+                  class="footer-contact--primary"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+
+                <a
+                  href="mailto:hello@omnifood.com"
+                  class="footer-contact--secondary"
+                  >hello@omnifood.com
+                </a>
+              </address>
+            </div>
+            <div class="footer-item">
+              <p class="footer-item--title">Company</p>
+              <ul>
+                <li>
+                  <a href="#">About Omnifood</a>
+                </li>
+                <li>
+                  <a href="#">For Business </a>
+                </li>
+                <li>
+                  <a href="#">Cooking partners </a>
+                </li>
+                <li>
+                  <a href="#">Careers </a>
+                </li>
+                <li>
+                  <a href="#">Recipe directory</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <p class="footer-item--title">Account</p>
+              <ul>
+                <li>
+                  <a href="#">Create Account</a>
+                </li>
+                <li>
+                  <a href="#">Sign In</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <p class="footer-item--title">Application</p>
+              <ul>
+                <li>
+                  <a href="#">iOS App</a>
+                </li>
+                <li>
+                  <a href="#">Android App</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <p class="footer-item--title">Privacy</p>
+              <ul>
+                <li>
+                  <a href="#">Privacy & terms</a>
+                </li>
+                <li>
+                  <a href="#">Help center</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>2000 - 2023 Omnifood &copy; - All rights reserved</p>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
