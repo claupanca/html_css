@@ -83,6 +83,9 @@ html {
   /* Percentage of USERS BROWSER FONT SIZE */
   /* will help for accesibility */
   font-size: 62.5%;
+
+  /* This hides the Navigation that is translated outside but it's working only if the nav is absolute in relation to the parent element */
+  overflow-x: hidden;
 }
 
 body {
@@ -90,6 +93,8 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  overflow-x: hidden;
 }
 
 /* .test {
